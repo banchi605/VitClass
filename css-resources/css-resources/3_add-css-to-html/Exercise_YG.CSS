@@ -1,0 +1,30 @@
+h1 {
+    color: red;
+}
+
+.important {
+    font-weight: bold;
+    color: blue;
+}
+
+#container {
+    font-size: 20px;
+}
+
+li {
+    border-bottom: 1px solid #ccc ;
+}
+
+li{
+    background-color: aqua;
+    box-sizing: content-box;
+    font-family: 'Courier New', Courier, monospace;
+
+
+a:hover {
+    color: green;
+    text-decoration: none;
+
+}
+
+

@@ -1,0 +1,26 @@
+.box1 {
+    background-color: lawngreen;
+    z-index: 1;
+}
+.box2 {
+    background-color: navy;
+    z-index: 2;
+}
+.box3 {
+    background-color: saddlebrown;
+    z-index: 2;
+}
+
+.box {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2 ;
+}
+
+p {
+    position: sticky;
+    z-index: 1;
+}

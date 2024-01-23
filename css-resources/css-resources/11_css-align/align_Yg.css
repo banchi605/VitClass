@@ -1,0 +1,36 @@
+.text-left {
+text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+.image-middle, .image-text-container {
+    align-items: center;
+ 
+    
+}
+.center-block {
+    margin: 0 auto;
+}
+.header-flex{
+display: flexbox;
+align-items: center;
+border: 1px solid;
+}
+.footer-flex{
+display: flexbox;
+align-items: center;
+border: 1px solid;
+}
+.absolute-box {
+    position: absolute;
+    border: 1px solid;
+    top: 50%;
+    left: 50%;
+}

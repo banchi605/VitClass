@@ -1,0 +1,23 @@
+#info-table {
+    border: 2px solid palevioletred;
+    margin: auto;
+
+}
+
+th, td {
+    border: 1px solid burlywood;
+}
+
+th {
+    background-color:darkolivegreen ;
+    text-align: center;
+}
+td {
+    padding: 4%;
+}
+ tbody:nth-child(even){
+    background-color: slateblue
+}
+tr:nth-child(odd) {
+    background-color: firebrick;
+}

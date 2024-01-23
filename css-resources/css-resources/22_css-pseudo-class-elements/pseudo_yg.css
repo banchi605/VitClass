@@ -1,0 +1,35 @@
+.hover-link:hover {
+    color: brown;
+    background-color: blue;
+}
+
+.active-button:active {
+    font-family: monospace;
+}
+
+.focus-input:focus {
+    border: 4px solid purple;
+    background-color: aquamarine;
+}
+.child-list:nth-child(n) {
+
+background-color: aquamarine;}
+.child-list:first-child {
+    background-color: yellowgreen
+}
+
+.before-after::after{
+   text-decoration: line-through;
+   content: "After";
+}
+
+.before-after::before {
+    content: "Lawmen" ;
+color: salmon;
+text-transform: uppercase;
+}
+
+.first-letter::first-letter {
+    font-weight: bolder;
+    color: violet;
+}

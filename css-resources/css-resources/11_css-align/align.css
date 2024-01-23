@@ -1,0 +1,33 @@
+/* Centering text horizontally */
+.text-center {
+    text-align: center;
+  }
+  
+  /* Centering text vertically using Flexbox */
+  .vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Define a height to center vertically */
+    border: 1px solid #333;
+  }
+  
+  /* Centering text both horizontally and vertically using Flexbox */
+  .horizontal-vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Define a height to center vertically */
+    text-align: center;
+    border: 1px solid #333;
+  }
+  
+  /* Centering text absolutely */
+  .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #333;
+  }
+  

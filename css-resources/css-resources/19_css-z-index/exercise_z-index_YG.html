@@ -1,0 +1,39 @@
+<!-- Objective:
+Gain practical experience with the CSS z-index property by manipulating the stacking order of HTML elements. -->
+<!-- Tasks: -->
+<!-- Use an external style sheet -->
+    <!-- Color the boxes:
+        Add a different background color to each of the .box elements to make them easier to see. -->
+
+    <!-- Positioning Elements:
+        Apply different position properties (relative, absolute, fixed, or sticky) to the .box elements. -->
+
+    <!-- Basic Z-Index Application:
+        Set z-index values for .box1, .box2, and .box3. Experiment with different integer values to see how the stacking order changes. -->
+
+    <!-- Overlay Element:
+        Use the .overlay div to create an overlay effect. Position it absolutely and use z-index to place it above or below the boxes. -->
+
+    <!-- Equal Z-Index Challenge:
+        Assign the same z-index value to two boxes and observe how their order in the HTML document affects their stacking. -->
+
+    <!-- Sticky Element:
+        Make the footer sticky at the bottom of the viewport and use z-index to ensure it stays above the other elements when scrolling. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z-Index Exercise</title>
+    <link rel="stylesheet" type="text/css" href="z-index_yg.css">
+</head>
+<body>
+    <div style="height: 100px; width: 100px;" class="overlay"></div>
+    <div style="height: 100px; width: 100px; border: 1px solid black"class="box box1">Box 1</div>
+    <div style="height: 100px; width: 100px; border: 1px solid black"class="box box2">Box 2</div>
+    <div style="height: 100px; width: 100px; border: 1px solid black"class="box box3">Box 3</div>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

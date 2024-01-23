@@ -1,0 +1,10 @@
+ /* External CSS */
+ h1 {
+    color: blue;
+}
+
+/* Internal (Embedded) CSS */
+p {
+    font-size: 18px;
+}
+

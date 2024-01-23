@@ -1,0 +1,13 @@
+/* Styling unordered list items */
+.unordered-list {
+    list-style-type: square;
+    list-style-position: inside;
+  }
+  
+  /* Styling ordered list items */
+  .ordered-list {
+    list-style-type: upper-roman;
+    list-style-image: url('custom-marker.png');
+    list-style-position: outside;
+  }
+  

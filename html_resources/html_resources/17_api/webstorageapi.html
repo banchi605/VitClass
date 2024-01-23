@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Web Storage Example</title>
+</head>
+<body>
+    <h1>HTML5 Web Storage Example</h1>
+
+    <h2>localStorage Example</h2>
+    <p>localStorage stores data with no expiration date, and it remains even after the browser is closed.</p>
+    <input type="text" id="inputText" placeholder="Enter something">
+    <button onclick="storeData()">Store Data</button>
+    <p>Stored Data: <span id="storedData"></span></p>
+
+    <h2>Session Storage Example</h2>
+    <p>sessionStorage stores data for a single session. It is cleared when the session ends (e.g., when the browser is closed).</p>
+    <input type="text" id="sessionInput" placeholder="Enter something">
+    <button onclick="storeSessionData()">Store Session Data</button>
+    <p>Stored Session Data: <span id="storedSessionData"></span></p>
+
+    <script>
+        // Function to store data in localStorage
+        function storeData() {
+            const inputText = document.getElementById("inputText").value;
+            localStorage.setItem("storedData", inputText);
+            displayStoredData();
+        }
+
+        // Function to display data stored in localStorage
+        function displayStoredData() {
+            const storedData = localStorage.getItem("storedData");
+            document.getElementById("storedData").textContent = storedData;
+        }
+
+        // Function to store data in sessionStorage
+        function storeSessionData() {
+            const sessionInput = document.getElementById("sessionInput").value;
+            sessionStorage.setItem("storedSessionData", sessionInput);
+            displayStoredSessionData();
+        }
+
+        // Function to display data stored in sessionStorage
+        function displayStoredSessionData() {
+            const storedSessionData = sessionStorage.getItem("storedSessionData");
+            document.getElementById("storedSessionData").textContent = storedSessionData;
+        }
+
+        // Display stored data when the page loads
+        displayStoredData();
+        displayStoredSessionData();
+    </script>
+</body>
+</html>

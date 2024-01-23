@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Type Selector */
+  p {
+    color: blue;
+  }
+
+  /* Class Selector */
+  .highlight {
+    background-color: yellow;
+  }
+
+  /* ID Selector */
+  #header {
+    font-size: 24px;
+  }
+
+  /* Descendant Selector */
+  nav ul {
+    list-style-type: square;
+  }
+
+  /* Child Selector */
+  ul > li {
+    font-weight: bold;
+  }
+
+  /* Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Attribute Selector */
+  a[target="_blank"] {
+    color: red;
+  }
+
+  /* Pseudo-Class Selector */
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Pseudo-Element Selector */
+  p::first-letter {
+    font-size: 24px;
+    color: orange;
+  }
+</style>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <p class="highlight">This is a highlighted paragraph.</p>
+  <p id="header">This is a header paragraph.</p>
+  <nav>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </nav>
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+  </ul>
+  <a href="#" target="_blank">Link with target="_blank"</a>
+  <a href="#">Normal link</a>
+</body>
+</html>

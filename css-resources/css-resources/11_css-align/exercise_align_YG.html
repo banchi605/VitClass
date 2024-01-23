@@ -1,0 +1,51 @@
+<!-- Objective:
+Create an external CSS stylesheet to apply various alignment techniques to the provided HTML structure below. This exercise focuses on understanding and implementing different CSS properties to align text, images, and block elements. -->
+<!-- Tasks: -->
+
+    <!-- Text Alignment:
+        Apply appropriate CSS to align the text in the paragraphs with classes text-left, text-right, text-center, and text-justify. -->
+
+    <!-- Vertical Alignment with Inline Elements:
+        Use the vertical-align property on the class image-middle to align the image vertically with the adjacent text. -->
+
+    <!-- Horizontal Centering of a Block Element:
+        Center the center-block div horizontally within its container. -->
+
+    <!-- Flexbox for Vertical Centering:
+        In header-flex and footer-flex, use Flexbox to vertically center the content. Set display: flex and align-items: center. -->
+
+    <!-- Absolute Positioning:
+        Apply absolute positioning to the absolute-box div. Experiment with position, top, right, bottom, left, and transform properties. -->
+       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Alignment Exercise</title>
+    <link rel="stylesheet" type="text/css" href="align_Yg.css">
+</head>
+<body>
+    <header class="header-flex">
+        <h1 class="header-title">Alignment Techniques</h1>
+        <p class="header-text">Exploring CSS Alignments</p>
+    </header>
+    <main>
+        <p class="text-left">This text is aligned to the left.</p>
+        <p class="text-right">This text is aligned to the right.</p>
+        <p class="text-center">This text is centered.</p>
+        <p class="text-justify">This text is justified and should spread evenly across the line.</p>
+        
+        <div class="image-text-container">
+            <img width="100px" height= "100px" src="https://www.giantbomb.com/a/uploads/scale_medium/0/6087/2437349-pikachu.png" alt="Example" class="image-middle">
+            <p>Text next to an image, aligned vertically.</p>
+        </div>
+
+        <div class="center-block">This div is to be centered horizontally.</div>
+        
+        <div class="absolute-box">This box should be absolutely positioned.</div>
+    </main>
+    <footer class="footer-flex">
+        <p>Footer content here.</p>
+    </footer>
+</body>
+</html>

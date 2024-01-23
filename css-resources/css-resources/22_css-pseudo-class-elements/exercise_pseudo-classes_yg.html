@@ -1,0 +1,43 @@
+<!-- Objective:
+Explore and apply CSS pseudo-classes and pseudo-elements to style elements under specific conditions and to manipulate parts of elements. -->
+
+<!-- Tasks: -->
+
+    <!-- :hover Pseudo-Class:
+        Style .hover-link to change color or background when hovered over. -->
+
+    <!-- :active Pseudo-Class:
+        Apply an :active pseudo-class to .active-button to change its style when clicked. -->
+
+    <!-- :focus Pseudo-Class:
+        Use the :focus pseudo-class on .focus-input to modify its border or background when it has focus. -->
+
+    <!-- :nth-child(n) and :first-child Pseudo-Class:
+        Style the first, second, and third child of .child-list differently using :nth-child(n) or :first-child. -->
+
+    <!-- ::before and ::after Pseudo-Elements:
+        Insert content before and after .before-after using ::before and ::after pseudo-elements. -->
+
+    <!-- ::first-letter Pseudo-Element:
+        Style the first letter of .first-letter to be larger, bold, or a different color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-Classes and Pseudo-Elements</title>
+    <link rel="stylesheet" type="text/css" href="pseudo_yg.css">
+</head>
+<body>
+    <a href="#" class="hover-link">Hover Over Me</a>
+    <button class="active-button">Click Me</button>
+    <input type="text" class="focus-input" placeholder="Focus on me">
+    <ul class="child-list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+    <p class="before-after">This paragraph will use ::before and ::after.</p>
+    <p class="first-letter">This is a paragraph to style the first letter.</p>
+</body>
+</html>

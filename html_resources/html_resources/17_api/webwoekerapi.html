@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Web Workers Example</title>
+</head>
+<body>
+    <h1>HTML5 Web Workers Example</h1>
+    <h2>In this example:</h2>
+    <ul>
+        <li>The main HTML file (index.html) contains a "Start Worker" button to create a new Web Worker and a "Stop Worker" button to terminate the worker.</li>
+        <li>When the "Start Worker" button is clicked, the main script creates a new Web Worker using the Worker constructor and assigns it the worker.js file. It also sets up an event handler to receive messages from the worker.</li>
+        <li>The worker script (worker.js) runs in the background thread. It calculates a sum of numbers and posts the result back to the main script using postMessage.</li>
+        <li>The main script updates the result on the web page when it receives a message from the worker.</li>
+        <li>The "Stop Worker" button allows you to terminate the worker.</li>
+    </ul>
+    <h3>To try this example, create the two files (index.html and worker.js) in the same directory, and open index.html in a web browser. Click "Start Worker" to run the Web Worker and perform the heavy calculations in the background.</p>
+
+    <button id="startWorker">Start Worker</button>
+    <button id="stopWorker">Stop Worker</button>
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+        let worker; // Variable to hold the worker
+
+        // Create a new worker when the "Start Worker" button is clicked
+        document.getElementById("startWorker").addEventListener("click", () => {
+            if (typeof(Worker) !== "undefined") {
+                if (typeof(worker) == "undefined") {
+                    worker = new Worker("worker.js"); // Create a new worker
+                    worker.onmessage = (event) => {
+                        document.getElementById("result").textContent = event.data; // Update the result with data from the worker
+                    };
+                }
+            } else {
+                document.getElementById("result").textContent = "Web Workers are not supported in your browser.";
+            }
+        });
+
+        // Terminate the worker when the "Stop Worker" button is clicked
+        document.getElementById("stopWorker").addEventListener("click", () => {
+            if (typeof(worker) != "undefined") {
+                worker.terminate(); // Terminate the worker
+                worker = undefined;
+            }
+        });
+    </script>
+</body>
+</html>

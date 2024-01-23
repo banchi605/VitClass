@@ -1,0 +1,74 @@
+<!-- Objective:
+Deepen your understanding of CSS Grid by creating a complex, responsive web page layout using advanced grid techniques. -->
+
+<!-- Tasks: -->
+
+    <!-- Grid Template Areas:
+    Define named areas in your CSS grid layout. Use the grid-template-areas property in your .grid-container class to assign names to different parts of the layout, like "header", "nav", "main-content", etc. Each name corresponds to a section in your HTML. For instance:
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav main-content sidebar"
+        "footer footer footer";
+} -->
+
+    <!-- Responsive Layout Adjustments:
+        Use media queries to change the grid layout for different devices. For example, on smaller screens, you might want the sidebar to move under the content or the header to be more compact. You'd adjust your grid-template-areas and other properties inside a media query block:
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main-content"
+            "sidebar"
+            "footer";
+    }
+}-->
+
+    <!-- Nested Grids:
+        Inside your main content area (or any other area), create another grid. This means setting a grid display on an element within one of your grid areas, allowing for more intricate layouts within that area. -->
+
+    <!-- Grid Item Spanning:
+        Make certain elements span multiple rows or columns. Use grid-row and grid-column properties on items to have them cover more than one cell. For example, .sidebar { grid-column: span 2; } would make the sidebar span two columns. -->
+
+    <!-- Grid Alignment and Justification:
+        Use properties like align-items, justify-items, align-content, and justify-content to align and justify items within their grid areas. These properties can be set on the container (affects all items) or on individual items. -->
+
+    <!-- Grid Gaps:
+        The grid-gap property (or row-gap and column-gap separately) sets the space between grid items. You might adjust these gaps for different screen sizes to ensure the layout remains visually balanced. -->
+
+    <!-- Aspect Ratio Control:
+        Use a combination of grid-template-rows and grid-template-columns to maintain aspect ratios for elements. The fr unit is useful here, as it allocates space relative to the container size. -->
+
+    <!-- Overlap and Layering:
+        Create overlapping elements by placing them in the same grid area and adjusting their row and column start/end lines. Use z-index to control which elements appear on top. -->
+
+    <!-- Dynamic Grids with Auto-fill / Auto-fit:
+        Use auto-fill or auto-fit with grid-template-columns or grid-template-rows for grids that adjust automatically based on the number of items and the container's size. -->
+
+    <!-- Advanced Grid Techniques:
+        Incorporate minmax() in your grid definition to allow grid tracks to flexibly resize between a minimum and maximum size. Use repeat() to define repeating patterns in your grid layout, simplifying complex grid definitions. -->
+
+    <!-- Animations and Transitions:
+        Add CSS transitions or animations to grid items for interactive effects. For instance, changing the background color smoothly on hover or resizing an item with a transition. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Grid Layout</title>
+    <link rel="stylesheet" type="text/css" href="grid_yg.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <nav class="nav">Navigation</nav>
+        <main class="main-content">Main Content</main>
+        <aside class="sidebar">Sidebar</aside>
+        <section class="extra-content">Extra Content</section>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

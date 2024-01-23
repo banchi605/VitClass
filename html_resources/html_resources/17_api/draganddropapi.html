@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Drag and Drop Example</title>
+    <style>
+        .draggable {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            user-drag: element;
+        }
+
+        .dropzone {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+    <script>
+        // Function to initiate drag and drop
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        // Function to start the drag
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        // Function to drop the element
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            var draggableElement = document.getElementById(data);
+            event.target.appendChild(draggableElement);
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML5 Drag and Drop Example</h1>
+
+    <div class="draggable" id="drag1" draggable="true" ondragstart="drag(event)">Drag Me</div>
+
+    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">Drop Here</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yorgie's User Registration</title>
+    </head>
+    <body>
+        <h1>User Registration</h1>
+        <p>Please fill out the information below to register to our site</p>
+
+        <form action="process_form.php" method="post">
+            <!--Name-->
+        <P>
+            <label for="First Name"> First name</label>
+            <input type="text" id="First Name" name="First Name" required> 
+            <label for="Last Name"> Last Name</label>
+            <input type="text" name="Last Name" id="Last Name">
+        </P>
+        <p>
+            <Label for="Email">Email</Label>
+            <input type="text" name="Email" id="Email" required>
+            <label for="Password">Password</label>
+            <input type="text" name="Password" id="Password" required> 
+         </p>
+        <P>Gender</P>
+        <ul><input type="radio" name="Gender" id="Male">
+        <Label for="Male">Male</Label></ul>
+        <ul><input type="radio" name="Gender" id="Female">
+        <label for="female"> Female</label></ul>
+        <ul><input type="radio" name="Gender" id="Other">
+        <label for="Other">Other</label></ul>
+
+        <P>Account type</P>
+        <input type="checkbox" name="Premium" id="Premium">
+        <label for="Premium">Premium</label>
+        <input type="checkbox" name="Standard" id="Standard">
+        <label for="Standard"> Standard</label>
+        <input type="checkbox" name="Free" id="Free">
+        <label for="Free">Free</label>
+        <P>
+        <label for="comments">Commments</label></P>
+        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+        <P><label for="Country">Country</label>
+        </P>
+        <select name="Country" id="Country">
+            <option value="1">United States</option>
+            <option value="2">Canada</option>
+            <option value="3">China</option>
+        </select>
+        <p><input type="submit" value="Submit"></p>
+    </P>
+
+        
+
+        </form>
+    </body>
+</html>
+
+
+
+<!-- Exercise: Create an HTML form for a user registration page. Include the following input elements and form fields:
+A text input for the user's first name.
+A text input for the user's last name.
+An email input for the user's email address.
+A password input for the user's password.
+A radio button group for gender selection (Male/Female/Other).
+Checkboxes for the user to select their interests (e.g., Sports, Music, Travel).
+A textarea for additional comments or notes.
+A dropdown select for the user to choose their country (e.g., United States, Canada, United Kingdom).
+A submit button to submit the form.
+Remember to use appropriate labels, IDs, and names for each input element and ensure that the form is properly structured. Additionally, include any necessary attributes like required for required fields or placeholder for providing hints. -->

@@ -1,0 +1,52 @@
+/* Setting background colors */
+header {
+    background-color: #333; /* Dark gray */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Using a background image */
+  section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Applying a background gradient */
+  .container {
+    background: linear-gradient(to bottom, #FF5733, #FF8C1A); /* Gradient from red to orange */
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Adding a fixed background image */
+  body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* Adjusting background origin and clip */
+  form {
+    background-color: #E8E8E8; /* Light gray */
+    padding: 20px;
+    background-origin: padding-box;
+    background-clip: content-box;
+  }
+  
+  /* Styling form elements */
+  input[type="text"],
+  textarea,
+  button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+  }
+  

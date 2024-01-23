@@ -1,0 +1,27 @@
+/* Overflow example */
+.overflow-example {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    overflow: scroll;
+  }
+  
+  /* Float example */
+  .float-left {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin-right: 20px;
+  }
+  
+  /* Inline-block example */
+  .button {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+  }
+  

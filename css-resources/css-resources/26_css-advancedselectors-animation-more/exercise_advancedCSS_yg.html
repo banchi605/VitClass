@@ -1,0 +1,166 @@
+<!-- Objective:
+Deepen your understanding of Advanced CSS.  -->
+
+<!-- Tasks: -->
+    <!-- Targeted Selectors
+    Objective: Apply unique styles to elements using different types of selectors.
+    Elements:
+        Class Selector (.task1-class): Style the div with the class task1-class.
+        ID Selector (#task1-id): Style the div with the ID task1-id.
+        Attribute Selector (p[type="text"]): Style the p element with a custom type="text" attribute. -->
+
+    <!-- nth-child Pseudo Selectors
+    Objective: Use :nth-child pseudo-selectors to style odd and even elements differently.
+    Elements: Style the odd and even p elements inside the div with the class .nth-child-example. -->
+
+    <!-- before & after Pseudo Selectors
+    Objective: Use ::before and ::after to insert content before and after an element.
+    Elements: Add content before and after the div with the class .pseudo-selector-example. -->
+
+    <!-- Box Shadows
+    Objective: Apply a box shadow to an element.
+    Elements: Add a box shadow to the div with the class .box-shadow-example. -->
+
+    <!-- Text Shadows
+    Objective: Apply a text shadow to text.
+    Elements: Add a text shadow to the p element with the class .text-shadow-example. -->
+
+    <!-- CSS Variables
+    Objective: Define and use a CSS variable.
+    Elements: Define a CSS variable (like --main-color) and use it to style the div with the class .css-variable-example. -->
+
+    <!-- Keyframe Animation
+    Objective: Create a keyframe animation and apply it to an element.
+    Elements: Define a keyframe animation (e.g., @keyframes slide-in) and apply it to the div with the class .keyframe-animation-example. -->
+
+    <!-- CSS Transitions
+    Objective: Apply a CSS transition to an element to change its style smoothly on hover.
+    Elements: Add a transition effect (e.g., background color change) to the div with the class .css-transition-example that activates on hover. -->
+
+    <!-- Transform Property
+    Objective: Use the transform property to alter the appearance of an element on hover.
+    Elements: Apply a transformation (like rotate, scale, or translate) to the div with the class .transform-example when hovered over. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Advanced Features Exercise</title>
+    <style>
+        /* Base styles to make elements visible */
+        div, p, a, span {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Task 1: Targeted Selectors */
+        .task1-class {
+            background-color: red;
+            font-style: oblique;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        #task1-id {
+            text-decoration: line-through;
+            color: pink;
+            text-align: right;
+            margin: auto;
+
+        }
+        p[type="text"] {
+            background-color: yellow;
+            text-indent: 25px;
+            font-weight: bolder;
+        }
+
+        /* Task 2: nth-child Pseudo Selectors */
+        .nth-child-example :nth-child(odd) {
+            text-align: center;
+            font-size: larger;
+            font-family: serif;
+        }
+        .nth-child-example :nth-child(even) {
+            text-align: end;
+            font-size: smaller;
+            font-family: monospace;
+            color: fuchsia;
+        }
+
+        /* Task 3: before & after Pseudo Selectors */
+        .pseudo-selector-example::before {
+            content: "This is  A LOT!--";
+            background-color: pink;
+        }
+        .pseudo-selector-example::after {
+            content: "--How Will I Remember all this??";
+            color: salmon;
+            background-color: yellow;
+        }
+
+        /* Task 4: Box Shadows */
+        .box-shadow-example {
+            box-shadow: 2px 2px 8px greenyellow;
+        }
+
+        /* Task 5: Text Shadows */
+        .text-shadow-example {
+            text-shadow: 6px 6px 9px purple;
+        }
+
+        /* Task 6: CSS Variables */
+        :root {
+            --main-color: #3498db;
+        }
+        .css-variable-example {
+            
+        }
+
+        /* Task 7: Keyframe Animation */
+        @keyframes slide-in {}
+        .keyframe-animation-example {0% { transform: translateX(-100%); } 100% { transform: translateX(0); } }
+
+        /* Task 8: CSS Transitions */
+        .css-transition-example:hover { transition: background-color 0.3s ease; }{background-color: #FF5733;} 
+
+        /* Task 9: Transform Property */
+        .transform-example:hover {transform: translate(50px, 50px) scale(1.2) rotate(45deg);}
+    </style>
+</head>
+<body>
+
+    <!-- Task 1: Targeted Selectors -->
+    <div class="task1-class">Class Selector</div>
+    <div id="task1-id">ID Selector</div>
+    <p type="text">Attribute Selector</p>
+
+    <!-- Task 2: nth-child Pseudo Selectors -->
+    <div class="nth-child-example">
+        <p>First</p>
+        <p>Second</p>
+        <p>Third</p>
+        <p>Fourth</p>
+    </div>
+
+    <!-- Task 3: before & after Pseudo Selectors -->
+    <div class="pseudo-selector-example">Before & After</div>
+
+    <!-- Task 4: Box Shadows -->
+    <div class="box-shadow-example">Box Shadow</div>
+
+    <!-- Task 5: Text Shadows -->
+    <p class="text-shadow-example">Text Shadow</p>
+
+    <!-- Task 6: CSS Variables -->
+    <div class="css-variable-example">CSS Variable</div>
+
+    <!-- Task 7: Keyframe Animation -->
+    <div class="keyframe-animation-example">Keyframe Animation</div>
+
+    <!-- Task 8: CSS Transitions -->
+    <div class="css-transition-example">CSS Transition</div>
+
+    <!-- Task 9: Transform Property -->
+    <div class="transform-example">Transform Property</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* Pseudo-Class Example */
+a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  /* Pseudo-Element Example */
+  .styled-element::before {
+    content: "Before: ";
+    font-weight: bold;
+  }
+  
+  .styled-element::after {
+    content: " After";
+    font-style: italic;
+  }
+  

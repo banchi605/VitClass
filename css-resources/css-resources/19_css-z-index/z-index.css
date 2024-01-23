@@ -1,0 +1,18 @@
+/* Styling the red box */
+.red-box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Styling the blue box */
+  .blue-box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    z-index: 1;
+  }
+  

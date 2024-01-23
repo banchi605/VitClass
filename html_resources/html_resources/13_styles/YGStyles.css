@@ -1,0 +1,25 @@
+h1 {
+    font-family: monospace;
+    color: blueviolet;
+    background-color: chartreuse;
+    height: auto;
+    width: fit-content;
+    margin: auto;}
+
+h3{
+    font-weight: bold;
+    background-color: cyan;
+    height: auto;
+    width: fit-content;
+    margin: auto;
+}
+
+li {
+    list-style: georgian;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: plum;
+}
+html{
+    background-color:beige;
+}
+

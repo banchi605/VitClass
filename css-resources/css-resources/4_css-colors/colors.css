@@ -1,0 +1,54 @@
+/* Using Color Names */
+h1 {
+    color: red;
+  }
+  
+  p {
+    background-color: lightblue;
+  }
+  
+  /* Using Hexadecimal Values */
+  .container {
+    background-color: #FFA500; /* Orange */
+  }
+  
+  a {
+    color: #008000; /* Green */
+  }
+  
+  /* Using RGB Values */
+  button {
+    background-color: rgb(255, 0, 0); /* Red */
+  }
+  
+  span {
+    color: rgb(0, 0, 255); /* Blue */
+  }
+  
+  /* Using RGBA Values */
+  .box {
+    background-color: rgba(0, 128, 0, 0.5); /* Semi-transparent green */
+  }
+  
+  .info {
+    background-color: rgba(255, 0, 0, 0.2); /* Semi-transparent red */
+  }
+  
+  /* Using HSL Values */
+  .circle {
+    background-color: hsl(120, 100%, 50%); /* Pure green */
+  }
+  
+  h2 {
+    color: hsl(210, 100%, 50%); /* Pure blue */
+  }
+  
+  /* Using HSLA Values */
+  .highlight {
+    background-color: hsla(0, 100%, 50%, 0.7); /* Semi-transparent red */
+  }
+  
+  .overlay {
+    background-color: hsla(240, 100%, 50%, 0.5); /* Semi-transparent blue */
+  }
+  

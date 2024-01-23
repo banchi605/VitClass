@@ -1,0 +1,24 @@
+.list-disc {
+list-style-type: disc;
+list-style-position: outside;
+}
+.list-square {
+    list-style-type:square ;
+    list-style-position: inside;
+}
+
+.list-custom {
+list-style-image: url(https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png);
+list-style-position: inside;
+
+}
+
+.list-decimal {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+.list-alpha {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+}

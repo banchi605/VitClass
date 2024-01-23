@@ -1,0 +1,81 @@
+/* Element Selector */
+p {
+    font-size: 16px;
+  }
+  
+  /* Class Selector */
+  .button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* ID Selector */
+  #header {
+    font-size: 24px;
+  }
+  
+  /* Attribute Selector */
+  input[type="text"] {
+    border: 1px solid #ccc;
+  }
+  
+  /* nth-child Pseudo Selectors */
+  li:nth-child(odd) {
+    background-color: lightgray;
+  }
+  li:nth-child(even) {
+    background-color: lightblue;
+  }
+  
+  /* before & after Pseudo Selectors */
+  a::before {
+    content: "\2190 "; /* Unicode arrow character */
+  }
+  a::after {
+    content: " (external)";
+  }
+  
+  /* Box Shadows */
+  .card {
+    box-shadow: 5px 5px 10px #888888;
+  }
+  
+  /* Text Shadows */
+  h1 {
+    text-shadow: 2px 2px 4px #888888;
+  }
+  
+  /* CSS Variables (Custom Properties) */
+  :root {
+    --main-bg-color: #3498db;
+  }
+  .custom-property-example {
+    background-color: var(--main-bg-color);
+  }
+  
+  /* Keyframe Animation */
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .animation-example {
+    animation: slide-in 1s ease;
+  }
+  
+  /* CSS Transitions */
+  .button-transition {
+    transition: background-color 0.3s ease;
+  }
+  .button-transition:hover {
+    background-color: #FF5733;
+  }
+  
+  /* Transform Property */
+  .transform-on-hover:hover {
+    transform: translate(20px, 20px) scale(1.2) rotate(45deg);
+  }
+  

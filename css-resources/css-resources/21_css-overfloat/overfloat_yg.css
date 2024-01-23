@@ -1,0 +1,27 @@
+.overflow-box {
+overflow: visible;
+border: 1px solid;
+margin: auto;
+text-align: center;
+}
+
+.max-width-box {
+    max-width: 400px;
+    border: 1px solid;
+    text-align: center;
+    margin: auto;
+}
+
+.floated-image {
+    float: right;
+    width: 45px;
+    height: 45px;
+    
+}
+.button-style {
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+
+
+}
