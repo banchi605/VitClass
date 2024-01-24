@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yorgie's Portfolio</title>
+        <link rel="stylesheet" href="capstone_yg.css">
+    </head>
+    <header id="Header">
+        <h1>Yorgie Garcia's Webpage Portfolio</h1>
+    </header>
+    <body class="body">
+        <div id="grid-container">
+        <div id="aboutme">
+            <h2>About Me</h2>
+            <p class="intro">My name is Yorgie Garcia and I am currently in the VetsinTech Full Stack Developer course
+                hoping to learn the basics of webpage development.
+            </p>
+            <div id="pic"><img class="mypic" src="https://media.licdn.com/dms/image/D5603AQFw4NJD8sINzQ/profile-displayphoto-shrink_800_800/0/1683583008993?e=1711584000&v=beta&t=cpwoIXETg1WYLFNc9lwTtMy7SxrSyW8xDYrXLNBiahE" alt="Yorgie Garcia headshot" height="200px" width="200px"></div>
+        </div>
+
+        <div id="bio">
+            <h2>Biography</h2>
+            <p class="bio"> I was born and raised in Puerto Rico and joined the United States Army in 2013 as a 25B (IT Specialist). I spent 8 years in the US Army
+                traveled around the world. I left the US Army after 8 years, I  have 5 Kids ranging from 16 years old
+                to 7 weeks old. I also have 4 dogs, two French Bulldogs and two Dachsunds. I enjoy riding motorcycles on my spare time and spending time with my children. 
+             </p>
+        </div>
+        <div id="skills">
+            <h2>Skills:</h2>
+            <p>Below are some skills I currently have and continue to expand on:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Windows Server</li>
+                <li>System Administration</li>
+                <li>System Engineering</li>
+                <li>Cyber Security</li>
+                <li>Linux</li>
+                <li>Microsoft Office products</li>
+                <li>Apple Products</li>
+                <li>Project Management</li>
+                <li>COMSEC</li>
+                <li>Cooking</li>
+                <li> Car Stereos</li>
+            </ul>
+        </div>
+
+        
+        <div id="project">
+            <h2>Projects</h2>
+            <p id="htmlex">
+                <h3>HTML</h3>
+                <ul>
+                <a href="https://github.com/banchi605/VitClass/blob/main/html_resources/html_resources/7_tables/exercise_tables_YG.html" target="_blank"><li>Tables Project</li></a>
+                <a href="https://github.com/banchi605/VitClass/blob/main/html_resources/html_resources/10_div_span/exercise_divandspan_YG.html" target="_blank"><li>Div Span Project</li></a>
+                <a href="https://github.com/banchi605/VitClass/tree/main/html_resources/html_resources/13_styles" target="_blank"><li>Styles Project</li></a>
+                <a href="https://github.com/banchi605/VitClass/tree/main/html_resources/html_resources/11_%20semantic_elements" target="_blank"><li>Semantic Project</li></a>
+            </ul>
+            </p>
+            <p id="CSSex">
+                <h3>CSS</h3>
+                <ul>
+                <a href="https://github.com/banchi605/VitClass/tree/main/css-resources/css-resources/24_css-grid" target="_blank"><li>Grid</li></a>
+                <a href="https://github.com/banchi605/VitClass/tree/main/css-resources/css-resources/25_css-flexbox" target="_blank"><li>Flexbox</li></a>
+                <a href="https://github.com/banchi605/VitClass/tree/main/css-resources/css-resources/15-css-links" target="_blank"><li>Links</li></a>
+                <a href="https://github.com/banchi605/VitClass/tree/main/css-resources/css-resources/13_css-position" target="_blank"><li>Positioning</li></a>
+            </ul>
+            </p>
+            <p id="jsex">
+                <h3>Javascript</h3>
+                <ul>
+                    <a href="https://github.com/banchi605/VitClass/tree/main/Day%201/08%20-%20Data%20Types" target="_blank"><li>Data Types</li></a>
+                    <a href="https://github.com/banchi605/VitClass/tree/main/Day%201/02%20-%20Syntax" target="_blank"><li>Syntax</li></a>
+                    <a href="https://github.com/banchi605/VitClass/tree/main/Day%201/03%20-%20Display%20output" target="_blank"><li>Display output</li></a>
+                    <a href="https://github.com/banchi605/VitClass/tree/main/Day%201/04%20-%20Statements" target="_blank"><li>Statements</li></a>
+                </ul>
+            </p>
+
+        </div>
+        <div id="contact">
+            <p> 
+                <H2>Contact Me!</H2>
+                <form name="contactform" action="/action_page.php" target="_blank" id="Contact me" method="post" onsubmit="return validateForm()">
+
+                    <p class="names">
+                        <label for="first">First Name</label> <br>
+                        <input type="text" name="first" id="first"> <br> 
+                        <label for="last" id="last"> Last Name</label > <br>
+                        <input type="text" name="last" id="last">
+                    </p>
+                    <p class="rest">
+                        <label for="email" id="email"> Email Address</label> <br>
+                        <input type="text" name="email" id="email"> <br>
+                        <label for="comments"> Comments</label> <br>
+                        <textarea name="comments" id="comments" cols="20" rows="3"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                    <p><ul id="listContainer"></ul></p>
+                </form>
+            </p>
+        </div>
+       
+    
+    </div>
+    </div>
+    <script src="capstone_yg.js"></script>
+    </body>
+
+    <footer> <div id="last">
+        <p class="last">
+            <button onclick="createList()">Okay, Last click</button>
+            
+        </p>
+        <div id="exit">
+            <p class="exit">
+                <button onclick="exit()"> Click Here before exiting</button>
+            </p>
+        </div></footer>
+</html>

@@ -1,0 +1,133 @@
+  
+  @media screen and (max-width: 900px) {
+    body {
+      font-size: 15px;
+    }
+  
+    #Header {
+      background-color: lightgreen;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 19px;
+    }
+  
+    #Header {
+      background-color: lightblue;
+    }
+  }
+
+#grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto 1fr auto;
+grid-gap: 10px;
+grid-template-areas: 
+"Header Header"
+"lefty righty" 
+"pic pic"
+"lefty2 righty2"
+"contact contact"  ;
+}
+html {
+    background-color: #8E98A7;
+}
+
+h3{
+  text-align: center;
+}
+
+#Header {
+grid-area: header;
+text-align: center;
+padding: 5px;
+width: fit-content;
+margin: auto;
+text-decoration: underline;
+text-shadow: 1px 1px 3px;
+}
+
+#aboutme {
+    grid-area: lefty;
+    
+}
+
+#bio {
+    grid-area: righty;
+    
+}
+#skills {
+    grid-area: lefty2;
+    
+}
+#project{
+    grid-area: righty2;
+
+}
+#contact {
+    grid-area: contact;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    border: 1px solid;
+}
+
+
+h2 {
+text-align: center;
+text-decoration: underline;
+}
+
+#pic {
+    padding: 10px;
+    text-align: center;
+}
+
+#exit {
+grid-area: contact;
+position: relative;
+
+}
+
+.exit{
+    position: absolute;
+    margin:0;
+}
+
+#last{
+    position: relative;
+    
+}
+
+.last{
+    position: absolute;
+    right: 1px;
+    margin: 0;
+}
+
+#listContainer{
+    position: absolute;
+    top: 275%;
+    right: 1%;   
+}
+
+a:link {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

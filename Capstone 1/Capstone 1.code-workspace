@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "css-resources",
+			"path": "../css-resources"
+		},
+		{
+			"name": "javascript-resources",
+			"path": "../javascript-resources"
+		},
+		{
+			"name": "Capstone 1",
+			"path": "."
+		},
+		{
+			"name": "html_resources",
+			"path": "../html_resources/html_resources"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Capstone 1"
+	}
+}
