@@ -1,0 +1,205 @@
+<!-- Objective:
+Deepen your understanding of CSS Flexbox by creating a complex, responsive web page layout using advanced flexbox techniques. -->
+
+<!-- Tasks: -->
+
+    <!-- Creating a Basic Flex Container:
+        Start by setting up a basic flex container. Assign display: flex; to a container element. This task will help you understand the fundamental nature of a Flexbox container and how it affects its children (flex items). -->
+
+    <!-- Manipulating Flex Direction:
+        Experiment with the flex-direction property. Create layouts where items are arranged in a row, a row-reverse, a column, and a column-reverse. This will demonstrate how Flexbox can handle both horizontal and vertical alignments. -->
+
+    <!-- Flex Item Sizing and the flex Property:
+        Utilize the flex property on child elements to control their growth and shrinkage. This task will help you understand how Flexbox distributes space within the container. -->
+
+    <!-- Implementing Flex Wrap:
+        Use the flex-wrap property to control the wrapping of flex items. Create examples where items wrap and do not wrap within the container, showing how Flexbox handles overflow of items. -->
+
+    <!-- Justifying Content:
+        Explore the justify-content property by aligning items in different ways (e.g., flex-start, flex-end, center, space-between, space-around). This task will demonstrate how Flexbox manages the distribution of space along the main axis. -->
+
+    <!-- Aligning Items on the Cross Axis:
+        Use align-items to control the alignment of items on the cross axis. Experiment with values like flex-start, flex-end, center, baseline, and stretch. -->
+
+    <!-- Handling Multiple Lines with Align Content:
+        When items wrap, align-content becomes relevant. Create examples where multiple lines of items are aligned in different ways within the container. -->
+
+    <!-- Nested Flex Containers:
+        Create a layout with nested flex containers. This will show how Flexbox handles complex layouts and how parent-child flex containers interact. -->
+
+    <!-- Responsive Design with Flexbox:
+        Use media queries to adjust Flexbox properties for different viewport sizes. This will demonstrate how Flexbox can be used to create responsive layouts. -->
+
+    <!-- Advanced Flex Item Control:
+        Delve into advanced control of flex items using properties like order to rearrange items and align-self to override alignment on individual items. -->
+
+    <!-- Flexbox for UI Components:
+        Create common UI components using Flexbox, such as navigation bars, image galleries, and card layouts. This task will illustrate how Flexbox can be used in practical scenarios. -->
+
+    <!-- Flexbox Challenges:
+        Tackle more complex layouts that challenge the limits of Flexbox. For example, create a complex, multi-layered navigation menu or a dynamic, responsive photo grid. -->
+        
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Exercise</title>
+    <link rel="stylesheet" href="flexbox_yg.css">
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- Task 1: Basic Flex Container -->
+<div class="container" style="display: flex;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<!-- Task 2: Flex Direction -->
+<div class="container" style="display: flex; flex-direction: column-reverse;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+<div class="container" style="display: flex; flex-direction: row-reverse; background-color: red;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+<!-- Task 3: Flex Item Sizing -->
+<div class="container" style="display: flex;">
+    <div class="box" style="flex: 3;">1</div>
+    <div class="box" style="flex: 2;">2</div>
+    <div class="box" style="flex: 3;">3</div>
+</div>
+
+<div class="container" style="display: flex;background-color: red;">
+    <div class="box" style="flex: 8;">1</div>
+    <div class="box" style="flex: 4;">2</div>
+    <div class="box" style="flex: 9;">3</div>
+</div>
+
+<!-- Task 4: Flex Wrap -->
+<div class="container" style="display: flex; flex-wrap: wrap;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+
+<div class="container" style="display: flex; flex-wrap: wrap-reverse; background-color: red;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+
+<!-- Task 5: Justifying Content -->
+<div class="container" style="display: flex; justify-content: space-around;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<div class="container" style="display: flex; justify-content: space-between; background-color: rebeccapurple;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<div class="container" style="display: flex; justify-content: center; background-color: red;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<!-- Task 6: Align Items -->
+<div class="container" style="display: flex; align-items: center; height: 100px;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<div class="container" style="display: flex; align-items: flex-end;background-color: red; height: 100px;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<div class="container" style="display: flex; align-items: baseline;background-color: red; height: 100px;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+<!-- Task 7: Align Content -->
+<div class="container" style="display: flex; flex-wrap: wrap; align-content: space-between; height: 200px;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</div>
+
+<div class="container" style="display: flex; flex-wrap: wrap; align-content: space-around; background-color: red; height: 200px;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</div>
+
+<div class="container" style="display: flex; flex-wrap: wrap; align-content: flex-end; background-color: red; height: 200px;">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</div>
+
+<!-- Task 8: Nested Flex Containers -->
+<div class="container" style="display: flex;">
+    <div class="box" style="display: flex; flex-direction: column;">
+        <div style="height: 20px; background-color: darkblue;">A</div>
+        <div style="height: 20px; background-color: darkblue;">B</div>
+    </div>
+    <div class="box" style="display: flex;flex-direction: column-reverse; align-content: center;">
+        <div style="height: 50px;background-color: orange;">2</div>
+        <div style="height: 55px;background-color: fuchsia;">3</div>
+</div>
+
+<!-- Task 9: Responsive Design with Flexbox -->
+<!-- Implement media queries in the <head> section for responsiveness -->
+
+<!-- Task 10: Advanced Flex Item Control -->
+<div class="container" style="display: flex;">
+    <div class="box" style="order: 2;">1</div>
+    <div class="box" style="order: 1;">2</div>
+</div>
+
+<!-- Task 11: Flexbox for UI Components -->
+<!-- Example: Navigation Bar -->
+<div class="container" style="display: flex;">
+    <div class="box">Home</div>
+    <div class="box">About</div>
+    <div class="box">Contact</div>
+</div>
+
+<!-- Task 12: Flexbox Challenges -->
+<!-- Complex Layouts: You can experiment with more complex structures -->
+
+</body>
+</html>
