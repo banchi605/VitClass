@@ -1,0 +1,80 @@
+<!-- Objective:
+Practice using different values of the CSS position property to control the layout of HTML elements. This exercise focuses on understanding and applying various positioning techniques using CSS. -->
+<!-- Tasks: -->
+<!-- Use an external style page -->
+    <!-- Static Positioning:
+        Apply the default static position to elements within section-static. Explore how elements behave in normal document flow. -->
+
+    <!-- Relative Positioning:
+        Apply relative positioning to section-relative and adjust its position slightly using top and left. -->
+
+    <!-- Absolute Positioning:
+        Set container-relative to have relative positioning. Then position box-absolute absolutely within it. Experiment with positioning it at different corners. -->
+
+    <!-- Fixed Positioning:
+        Apply fixed positioning to header-fixed so it remains visible at the top of the viewport as you scroll. -->
+
+    <!-- Sticky Positioning:
+        Make footer-sticky stick to the bottom of the viewport when scrolling. Use sticky positioning with an appropriate bottom value. -->
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning Exercise</title>
+    <link rel="stylesheet" type="text/css" href="positions_YG.css">
+</head>
+<body>
+    <header class="header-fixed">
+        <h1>Positioning in CSS</h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section class="section-static">
+            <p>This is a static-positioned paragraph.</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <section class="section-relative">
+            <p>This is a relatively positioned paragraph.</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div class="container-relative">
+            <div class="box-absolute">This is an absolutely positioned box.</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <footer class="footer-sticky">
+            <p>This is a sticky-positioned footer.</p>
+        </footer>
+    </main>
+</body>
+</html>

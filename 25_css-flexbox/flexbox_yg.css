@@ -1,0 +1,5 @@
+.flex{
+background-color: red;
+justify-content: center;
+flex-direction: column-reverse;
+}

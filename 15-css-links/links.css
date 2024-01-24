@@ -1,0 +1,38 @@
+/* Styling basic links */
+.basic-link {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  /* Styling visited links */
+  .visited-link {
+    color: purple;
+  }
+  
+  /* Hover effect on links */
+  .hover-link {
+    color: green;
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  .hover-link:hover {
+    font-weight: bold;
+  }
+  
+  /* Active link styling */
+  .active-link {
+    background-color: yellow;
+    color: red;
+    text-decoration: none; /* Remove underline on click */
+  }
+  
+  .active-link:active {
+    background-color: orange;
+    color: white;
+  }
+  
+  /* Text transformation on links */
+  .transformed-link {
+    text-transform: uppercase;
+  }
+  
